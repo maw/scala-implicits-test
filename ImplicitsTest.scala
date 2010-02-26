@@ -22,20 +22,20 @@ object ImplicitsTest {
       
       printEmailAddress(b)
       
-      // printEmailAddress("hehe") /* <--- this fails */
-      printEmailAddress(new EmailAddress("reme@example.com")) // <-- but not this
+      // printEmailAddress("hehe") /* <-- this fails */
+      printEmailAddress(new EmailAddress("remedios@example.com")) // <-- but not this
 
       println("Now we'll do stuff to the EmailAddress as though it were")
       println("a string.")
       println("ok? " + b.contains("@"))
       println("not ok?" + b.contentEquals("alksdjflkajsdlkjsdf"))
       
-      val c = EmailAddress("taco@example.com")
+      val c = EmailAddress("taquito@example.com")
       printAnyString(c)
       printEmailAddress(c)
       println("ok? " + c.contains("@"))
       
-      printEmailAddress(EmailAddress("kiwi@examples.com"))
+      printEmailAddress(EmailAddress("kiwi@example.com"))
       printAnyString(EmailAddress("botas@example.com"))
     } catch { 
       case bse: BadEmailAddressException =>
