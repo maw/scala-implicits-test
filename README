@@ -1,0 +1,16 @@
+-*- text -*-
+
+A snippet of code I wrote as an exercise to figure out how Scala's
+implicit conversions work.  It's a neat concept -- it lets you fake
+subclassing types declared as final.  I just have a simple use-case
+here, but it's easy to imagine more interesting ones: a safe SQL
+string class is one; guaranteed prime integers is another.
+
+To build and run:
+
+$ scalac EmailAddress.scala ImplicitsTest.scala
+$ scala ImplicitsTest
+
+
+
+
